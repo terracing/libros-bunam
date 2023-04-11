@@ -1,0 +1,123 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+h1 > span {
+    font-family: 'Bodoni Moda', serif;
+}
+
+body > header {
+    background: #1a4d6b;
+    background: linear-gradient(45deg, rgba(26,77,107,1) 0%, rgba(20,60,83,1) 50%);
+    color: aliceblue;
+    padding: 10px 0 200px;
+}
+
+header a {
+    margin: 20px 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+header a:nth-child(1) {
+    margin-left: 0;
+}
+
+header span {
+    color: #c69541;
+}
+header h2 {
+    margin-top: 20px;
+}
+section.container {
+    position: relative;
+}
+.container .row:nth-child(2) {
+    margin-top: 10px;
+}
+
+article .ratio {
+    margin-top: -132px;
+    margin-bottom: 20px;
+}
+
+section .go-download {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background: rgb(26,77,107);
+    background: linear-gradient(180deg, rgba(26,77,107,1) 0%, rgba(20,60,83,1) 50%);
+    border-radius: 6px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+section .go-download:hover {
+    background: linear-gradient(0deg, rgba(26,77,107,1) 0%, rgba(20,60,83,1) 50%);
+}
+
+#libro-info {
+    color: #1a4d6b;
+    margin-top: 4rem;
+    line-height: 2.6rem;
+}
+
+
+h3 {
+    margin: 20px 0;
+    padding-bottom: 6px;
+    border-bottom: 3px dotted #84e2c7;
+}
+
+@media(max-width: 992px) and (min-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+
+    article div.row > .col-2 > span {
+        padding: 12px 18px;
+        border-radius: 50%;
+        margin-left: -10px;
+    }
+}
+
+@media(max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    article .ratio {
+        margin-top: -80px;
+    }
+}
+
+@media(max-width: 576px) {
+    body > header {
+        padding: 10px 0 120px;
+    }
+    article .ratio {
+        margin-top: -70px;
+    }
+    div.col-12.col-sm-6.order-sm-1 div {
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 420px) {
+    body {
+        font-size: 16px;
+    }
+}
